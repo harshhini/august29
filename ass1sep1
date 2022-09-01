@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int evenorodd(int);
+void main()
+{
+int num,x;
+clrscr();
+printf("enter a number\n");
+scanf("%d",&num);
+x=evenorodd(num);
+if(x==0)
+printf("even");
+else
+printf("odd");
+getch();
+}
+int evenorodd(int num)
+{
+if(num%2==0)
+return(0);
+else
+return(1);
+}
